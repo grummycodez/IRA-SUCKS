@@ -3,7 +3,7 @@ const Enmap = require('enmap');
 const EnmapLevel = require('enmap-level');
 const { promisify } = require('util');
 const readdir = promisify(require('fs').readdir);
-const client = new Discord.Client();
+let client = new Discord.Client();
 
 require('./express');
 
